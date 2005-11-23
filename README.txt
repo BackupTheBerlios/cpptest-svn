@@ -3,3 +3,5 @@ When doing testing, use
 or
     make -i test
 to invoke the make tool. Or you'll get unexpected error info.
+
+Enjoy!
