@@ -84,6 +84,14 @@ void summary(void) {
         fprintf(stderr, "# Looks like you planned %ld tests but only ran %ld.\n",
             Total, Count);
     } else {
+        if (ErrorCount == 1) {
+            fprintf(stderr, "# Looks like you failed 1 test of %ld.\n", Total);
+            return;
+        }
+        if (ErrorCount > 1) {
+            fprintf(stderr, "# Looks like you failed %ld tests of %ld.\n", ErrorCount, Total);
+            return;
+        }
         //...
         fprintf(stderr, "For total %ld tests\n");
     }

@@ -1,0 +1,148 @@
+1..60
+not ok 1
+#     Failed test (ex.cpp at line 6)
+ok 2
+ok 3 - My third test
+ok 4
+not ok 5
+#     Failed test (ex.cpp at line 21)
+#          got: 'abc'
+#     expected: 'ab'
+ok 6 - My char test
+not ok 7 - Failed test
+#     Failed test (ex.cpp at line 23)
+#          got: 'abc'
+#     expected: 'ab'
+ok 8
+not ok 9
+#     Failed test (ex.cpp at line 27)
+#     '123'
+#         ne
+#     '132'
+ok 10 - My int test
+not ok 11 - Failed test
+#     Failed test (ex.cpp at line 29)
+#     '123'
+#         ne
+#     '132'
+ok 12
+not ok 13
+#     Failed test (ex.cpp at line 33)
+#     '123'
+#         ne
+#     '132'
+ok 14 - My  short int test
+not ok 15 - Failed test
+#     Failed test (ex.cpp at line 35)
+#     '123'
+#         ne
+#     '132'
+ok 16
+not ok 17
+#     Failed test (ex.cpp at line 39)
+#     '123'
+#         ne
+#     '132'
+ok 18 - My int test
+not ok 19 - Failed test
+#     Failed test (ex.cpp at line 41)
+#     '123'
+#         ne
+#     '132'
+ok 20
+not ok 21
+#     Failed test (ex.cpp at line 45)
+#     '1.222222'
+#         ne
+#     '1.233333'
+ok 22 - My double test
+not ok 23 - Failed test
+#     Failed test (ex.cpp at line 47)
+#     '1.222222'
+#         ne
+#     '1.233333'
+ok 24
+not ok 25
+#     Failed test (ex.cpp at line 51)
+#     '1.222222'
+#         ne
+#     '1.233333'
+ok 26 - My float test
+not ok 27 - Failed test
+#     Failed test (ex.cpp at line 53)
+#     '1.222222'
+#         ne
+#     '1.233333'
+not ok 28
+#     Failed test (ex.cpp at line 57)
+#     'abc'
+#         ne
+#     'abc'
+ok 29
+not ok 30 - My char test
+#     Failed test (ex.cpp at line 59)
+#     'abc'
+#         ne
+#     'abc'
+ok 31 - Failed test
+not ok 32
+#     Failed test (ex.cpp at line 62)
+#     '123'
+#         ne
+#     '123'
+ok 33
+ok 34 - My int test
+not ok 35 - Failed test
+#     Failed test (ex.cpp at line 65)
+#     '123'
+#         ne
+#     '123'
+not ok 36
+#     Failed test (ex.cpp at line 67)
+#     '123'
+#         ne
+#     '123'
+ok 37
+ok 38 - My  short int test
+not ok 39 - Failed test
+#     Failed test (ex.cpp at line 70)
+#     '123'
+#         ne
+#     '123'
+not ok 40
+#     Failed test (ex.cpp at line 72)
+#     '123'
+#         ne
+#     '123'
+ok 41
+ok 42 - My int test
+not ok 43 - Failed test
+#     Failed test (ex.cpp at line 75)
+#     '123'
+#         ne
+#     '123'
+not ok 44
+#     Failed test (ex.cpp at line 78)
+#     '1.222222'
+#         ne
+#     '1.222222'
+ok 45
+ok 46 - My double test
+not ok 47 - Failed test
+#     Failed test (ex.cpp at line 81)
+#     '1.222222'
+#         ne
+#     '1.222222'
+not ok 48
+#     Failed test (ex.cpp at line 83)
+#     '1.222222'
+#         ne
+#     '1.222222'
+ok 49
+ok 50 - My float test
+not ok 51 - Failed test
+#     Failed test (ex.cpp at line 86)
+#     '1.222222'
+#         ne
+#     '1.222222'
+# Looks like you planned 60 tests but only ran 51.

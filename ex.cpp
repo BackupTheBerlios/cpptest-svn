@@ -3,7 +3,6 @@
 int main() {
 	test_plan(60);
 
-#line 1 "test.pl"
 	ok(0);
 	ok(1);
 	ok_(3, "My third test");

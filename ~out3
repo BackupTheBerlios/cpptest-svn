@@ -1,0 +1,6 @@
+1..3
+not ok 1
+#     Failed test (ex3.cpp at line 6)
+ok 2
+ok 3
+# Looks like you failed 1 test of 3.
