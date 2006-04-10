@@ -92,13 +92,7 @@ void summary(void) {
             fprintf(stderr, "# Looks like you failed %ld tests of %ld.\n", ErrorCount, Total);
             return;
         }
-        //...
-        fprintf(stderr, "For total %ld tests\n");
     }
-   // if(ErrorCount > 0){
-   //     fprintf(stderr, "#",Count, ErrorCount)
-   // }else{
-   // }
 }
 
 void Ok(const char* fname, long lineno, int a, const char* info) {
