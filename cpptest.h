@@ -83,6 +83,11 @@ void summary(void) {
     if (Count < Total) {
         fprintf(stderr, "# Looks like you planned %ld tests but only ran %ld.\n",
             Total, Count);
+    } else if (Count > Total) {
+        if (Total == 1)
+            fprintf(stderr, "# Looks like you planned 1 test but ran %ld extra.\n", Count - Total);
+        else
+            fprintf(stderr, "# Looks like you planned %ld tests but ran %ld extra.\n", Total, Count - Total);
     } else {
         if (ErrorCount == 1) {
             fprintf(stderr, "# Looks like you failed 1 test of %ld.\n", Total);
