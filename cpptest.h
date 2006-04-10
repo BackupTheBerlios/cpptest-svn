@@ -12,7 +12,7 @@
 #include <string.h>
 #include <math.h>
 
-const double DOUBLE_ERROR = 1e-18;
+const double DOUBLE_ERROR = 1e-15;
 const float  FLOAT_ERROR = 1e-6;
 
 #define ok(a) \
@@ -33,8 +33,6 @@ const float  FLOAT_ERROR = 1e-6;
 #define isnt_(a,b,info) \
     Isnt(__FILE__, __LINE__, a, b, info);
 
-#define FLOAT_EPS 1.0e-6
-#define DOUBLE_EPS 1.0e-15
 long Count = 0;
 long Total = 0;
 long ErrorCount = 0;
