@@ -1,8 +1,8 @@
 //: cpptest.h
 //: C++ port for Perl's Test::More module
 //: v0.01
-//: Copyright (c) Agent Zhang
-//: 2005-10-13 2005-10-15
+//: Copyright (c) 2005-2006 Agent Zhang
+//: 2005-10-13 2006-04-10
 
 #ifndef _CPPTEST_H_
 #define _CPPTEST_H_
@@ -103,6 +103,27 @@ void summary(void) {
 void Ok(const char* fname, long lineno, int a, const char* info) {
     ++Count;
     if (a) {
+        if (strcmp(info, "") == 0)
+            printf("ok %d\n", Count);
+        else
+            printf("ok %d - %s\n", Count, info);
+        fflush(stdout);
+    } else {
+        ErrorCount++;
+        if (strcmp(info, "") == 0)
+            printf("not ok %d\n", Count);
+        else
+            printf("not ok %d\n", Count);
+        fflush(stdout);
+        fprintf(stderr, "#     Failed test (%s at line %d)\n",
+            fname, lineno);
+        fflush(stderr);
+    }
+}
+
+void Ok(const char* fname, long lineno, void* ptr, const char* info) {
+    ++Count;
+    if (ptr) {
         if (strcmp(info, "") == 0)
             printf("ok %d\n", Count);
         else
