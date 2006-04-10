@@ -12,6 +12,8 @@
 #include <string.h>
 #include <math.h>
 
+const double DOUBLE_ERROR = 1e-18;
+const float  FLOAT_ERROR = 1e-6;
 
 #define ok(a) \
     Ok(__FILE__, __LINE__, a, "");
@@ -250,7 +252,7 @@ void Is(const char* fname, long lineno,
 void Is(const char* fname, long lineno,
         const double a, const double b, const char* info) {
     ++Count;
-    if (a == b ) {
+    if (a <= b + DOUBLE_ERROR && a >= b - DOUBLE_ERROR ) {
         if (strcmp(info, "") == 0)
             printf("ok %d\n", Count);
         else
@@ -276,7 +278,7 @@ void Is(const char* fname, long lineno,
 void Is(const char* fname, long lineno,
         const float a, const float b, const char* info) {
     ++Count;
-    if (  a == b ) {
+    if (  a <= b + FLOAT_ERROR && a >= b - FLOAT_ERROR ) {
         if (strcmp(info, "") == 0)
             printf("ok %d\n", Count);
         else
